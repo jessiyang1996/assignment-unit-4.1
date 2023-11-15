@@ -9,28 +9,46 @@ function hello() {
   return 'Hello World!';
 }
 // Call the function to test
+hello();
 console.log('Test - should say "Hello World!"', hello());
-
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
-function helloName(name) {
-  return;
-}
-// Remember to call the function to test
+let name = 'Your Name';
 
+function helloName() {
+  console.log( 'in helloName function');
+  return 'Hello, ' + name + '!';
+} // end of helloName function
+
+// Remember to call the function to test
+console.log( helloName() );
 
 // 3. Function to add two numbers together & return the result
-function addNumbers(firstNumber) {
-  // return firstNumber + secondNumber;
-}
+let firstNumber;
+let secondNumber;
 
+function addNumbers( firstNumber, secondNumber ) {
+  console.log( 'in addNumbers Function')
+  return firstNumber + secondNumber;
+} // end of addNumbers function
+
+console.log( '=== !!! addNumbers Test !!! ===')
+console.log( 'addNumbers Test 36, 54: ', addNumbers( 36, 54));
+console.log( 'addNumbers Test 5, 6: ', addNumbers( 5, 6));
+console.log( 'addNumbers Test 15, 3: ', addNumbers( 15, 3));
+console.log( 'addNumbers Test 25, 9: ', addNumbers( 25, 9));
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree() {
+function multiplyThree(firstNumber, secondNumber, thirdNumber) {
+  console.log( 'in multiplyThree Function: ' )
+  return firstNumber * secondNumber * thirdNumber;
+} // End of multiplyThree Function
 
-}
-
+console.log( '=== !!! multiplyThree Test !!! ===')
+console.log( 'multiplyThree 2, 3, 4: ', multiplyThree( 2, 3, 4) );
+console.log( 'multiplyThree 1, 10, 10: ', multiplyThree( 1, 10, 10) );
+console.log( 'multiplyThree 5, 6, 9: ', multiplyThree( 5, 6, 9) );
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
