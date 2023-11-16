@@ -74,20 +74,22 @@ console.log( 'Is positive? (-10)', isPositive(-10));
 //    array is empty, return `undefined`.
 
 console.log( '=== !!! getLast Function !!! ===')
+
 function getLast(array) {
-  console.log('In getLast Function')
-  for(i=0; i<array.length; i++){
-    console.log( lastItem = array[array.length-1])
-  }
+  console.log('In getLast Function');
+  lastItem = array[array.length-1]
+  return lastItem
 };
 
+// Test to see if our code works:
 let bts = [ 'Namjoon', 'J-HOPE', 'Jungkook', 'Jin', 'Jimin', 'Suga', 'V'];
 let array = bts;
-getLast( bts );
+console.log(getLast(bts));
 
 let BIGBANG = [ 'GDragon', 'TOP', 'Taeyang', 'Daesung', 'Seungri'];
 array = BIGBANG;
-getLast( BIGBANG );
+console.log(getLast(BIGBANG));
+//Confirmed it works!
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
