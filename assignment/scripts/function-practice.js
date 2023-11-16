@@ -98,14 +98,33 @@ function find(value, array) {
 
 }
 
+
 // ----------------------
 // Stretch Goals
 // ----------------------
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
 function isFirstLetter(letter, string) {
-
+  console.log( 'in isFirstLetter Function')
+  if(letter===string[0]){
+    return true;
+  }
+  else{
+    return false;
+  }
 }
+
+// Test
+let string = 'Seventeen is cool';
+let letter = 'S';
+
+console.log(isFirstLetter('S', string)); // expected answer: true
+
+// Test 2
+string = 'I am happy';
+letter = 'h';
+
+console.log(isFirstLetter('h', string)); // expected answer: false
 
 
 // 9. Function to return the sum of all numbers in an array
