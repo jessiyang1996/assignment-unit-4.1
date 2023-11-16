@@ -7,7 +7,7 @@ console.log('***** Function Practice *****');
 // 1. Function to return 'Hello World!'
 function hello() {
   return 'Hello World!';
-}
+};
 // Call the function to test
 hello();
 console.log('Test - should say "Hello World!"', hello());
@@ -19,7 +19,7 @@ let name = 'Your Name';
 function helloName() {
   console.log( 'in helloName function');
   return 'Hello, ' + name + '!';
-} // end of helloName function
+}; // end of helloName function
 
 // Remember to call the function to test
 console.log( helloName() );
@@ -31,7 +31,7 @@ let secondNumber;
 function addNumbers( firstNumber, secondNumber ) {
   console.log( 'in addNumbers Function')
   return firstNumber + secondNumber;
-} // end of addNumbers function
+}; // end of addNumbers function
 
 console.log( '=== !!! addNumbers Test !!! ===')
 console.log( 'addNumbers Test 36, 54: ', addNumbers( 36, 54));
@@ -43,7 +43,7 @@ console.log( 'addNumbers Test 25, 9: ', addNumbers( 25, 9));
 function multiplyThree(firstNumber, secondNumber, thirdNumber) {
   console.log( 'in multiplyThree Function: ' )
   return firstNumber * secondNumber * thirdNumber;
-} // End of multiplyThree Function
+}; // End of multiplyThree Function
 
 console.log( '=== !!! multiplyThree Test !!! ===')
 console.log( 'multiplyThree 2, 3, 4: ', multiplyThree( 2, 3, 4) );
@@ -59,22 +59,35 @@ function isPositive(number) {
   } else{
   return 'Number is positive: ', false;
   }
-}
+};
 
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
 console.log( '=== !!! isPositive Test !!! ===')
-console.log( 'Is positive? (-2)', isPositive(-2))
-console.log( 'Is positive? (3)', isPositive(3))
-console.log( 'Is positive? (-0.5)', isPositive(-0.5))
-console.log( 'Is positive? (5)', isPositive(5))
-console.log( 'Is positive? (-10)', isPositive(-10))
+console.log( 'Is positive? (-2)', isPositive(-2));
+console.log( 'Is positive? (3)', isPositive(3));
+console.log( 'Is positive? (-0.5)', isPositive(-0.5));
+console.log( 'Is positive? (5)', isPositive(5));
+console.log( 'Is positive? (-10)', isPositive(-10));
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
-function getLast(array) {
 
-}
+console.log( '=== !!! getLast Function !!! ===')
+function getLast(array) {
+  console.log('In getLast Function')
+  for(i=0; i<array.length; i++){
+    console.log( lastItem = array[array.length-1])
+  }
+};
+
+let bts = [ 'Namjoon', 'J-HOPE', 'Jungkook', 'Jin', 'Jimin', 'Suga', 'V'];
+let array = bts;
+getLast( bts );
+
+let BIGBANG = [ 'GDragon', 'TOP', 'Taeyang', 'Daesung', 'Seungri'];
+array = BIGBANG;
+getLast( BIGBANG );
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
