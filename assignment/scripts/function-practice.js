@@ -94,10 +94,26 @@ console.log(getLast(BIGBANG));
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
-function find(value, array) {
+let value;
+let i;
 
+function find(value, array) {
+  console.log( 'In find Function') // let us know that we are in the array
+  value = array[i];
+  for(let i=0; i<array.length; i++){ // set up the for loop
+    if(array[i] === value){ // array[i] = item = value
+      return true;
+    }
+    else{
+      return false;
+    }
+  }
 }
 
+// find() test:
+value = 'Taeyang';
+i = 2;
+console.log( find("Taeyang", BIGBANG ));
 
 // ----------------------
 // Stretch Goals
@@ -131,7 +147,9 @@ console.log(isFirstLetter('h', string)); // expected answer: false
 function sumAll(array) {
   let sum = 0;
   // TODO: loop to add items
-
+  for(i=0; i<array.length; i++){
+    
+  }
   // TODO: return the sum
 }
 
